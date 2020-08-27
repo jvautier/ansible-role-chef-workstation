@@ -1,0 +1,7 @@
+---
+- name: "Install chefworkstation {{ chef_workstation_version }}"
+  retries: 5
+  apt:
+    # yamllint disable-line rule:line-length
+    deb: https://packages.chef.io/files/stable/chef-workstation/{{ chef_workstation_version }}/{{ ansible_distribution | lower}}/{{ ansible_distribution_version }}/chef-workstation_{{ chef_workstation_version }}-1_amd64.deb
+  register: chefworkstation_install

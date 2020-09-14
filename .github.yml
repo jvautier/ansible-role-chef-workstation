@@ -1,0 +1,8 @@
+---
+fullname: jvautier/ansible-role-chef-workstation
+description: Install chef workstation through ansible
+tags:
+  - ansible
+  - ansible-role
+  - chef-workstation
+github: {}
